@@ -1,5 +1,5 @@
-function placed(){
-	document.getElementById("success-message").style.display = "block";
+function placed() {
+  document.getElementById("success-message").style.display = "block";
 }
 
 //carousel
@@ -10,37 +10,37 @@ $('.slider').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   responsive: [
-  {
-    breakpoint: 1024,
-    settings: {
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    infinite: false,
-    dots: false,
-    arrows:false
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: false,
+        dots: false,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
     }
-  },
-  {
-    breakpoint: 600,
-    settings: {
-    slidesToShow: 2,
-    slidesToScroll: 2
-    }
-  },
-  {
-    breakpoint: 480,
-    settings: {
-    slidesToShow: 1,
-    slidesToScroll: 1
-    }
-  }
   ]
 });
 
 
 (function () {
   'use strict'
- 
+
   var forms = document.querySelectorAll('.needs-validation')
 
   Array.prototype.slice.call(forms)
@@ -56,8 +56,8 @@ $('.slider').slick({
     })
 })()
 
-$('.card-header').on('click', function() {
-  if($(this).hasClass('footer-accordion-open')) {
+$('.card-header').on('click', function () {
+  if ($(this).hasClass('footer-accordion-open')) {
     $(this).removeClass('footer-accordion-open');
     $('.fa-chevron-down', this).removeClass('rotate-icon');
   }
